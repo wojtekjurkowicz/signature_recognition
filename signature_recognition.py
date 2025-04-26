@@ -5,6 +5,12 @@ import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
+import kagglehub
+
+"""# Download latest version
+path = kagglehub.dataset_download("robinreni/signature-verification-dataset")
+
+print("Path to dataset files:", path)"""
 
 
 # 2. Wstępne przetwarzanie obrazu
