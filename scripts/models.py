@@ -13,7 +13,10 @@ import joblib
 import matplotlib
 import os
 
-matplotlib.use('TkAgg')
+if os.environ.get("DISPLAY", "") == "":
+    matplotlib.use("Agg")
+else:
+    matplotlib.use("TkAgg")
 
 
 # Punkt e: Implementacja klasyfikatora k-NN oraz MLP

@@ -1,4 +1,5 @@
 ## 🖊 Signature Recognition and Verification System
+![Tests](https://github.com/wojtekjurkowicz/signature_recognition/actions/workflows/tests.yml/badge.svg)
 
 This project implements a full pipeline for offline signature recognition and verification using classical machine learning methods. It includes custom image preprocessing, handcrafted feature extraction, training of classification models (k-NN, MLP, RandomForest, SVM), and visual analysis of feature space using PCA and t-SNE.
 
