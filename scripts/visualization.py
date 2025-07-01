@@ -5,7 +5,11 @@ from sklearn.manifold import TSNE
 import matplotlib
 import os
 
-matplotlib.use('TkAgg')
+if os.environ.get("DISPLAY", "") == "":
+    matplotlib.use("Agg")
+else:
+    matplotlib.use("TkAgg")
+
 os.makedirs("../outputs", exist_ok=True)
 
 
